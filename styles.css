@@ -302,34 +302,44 @@ footer span {
 }
 
 .our-story {
-    padding: 20px 40px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}  
+    
+.our-story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.our-story h1 {
-    text-align: center;
-    color: #333333;
-    font-size: 48px;
+.story-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    z-index: 1;
+}
+
+.story-overlay h1 {
+    color: white;
+    font-size: 36px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #333333;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.our-story h2 {
-    color: #333333;
+.story-overlay h2 {
+    color: white;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.our-story p {
-    color: #333333;
+.story-overlay p {
+    color: white;
     font-size: 16px;
     line-height: 1.8;
-    margin-bottom: 20px;
 }
-
 
 .meet-the-team h2 {
     color: #333333;
@@ -648,4 +658,176 @@ footer span {
 
 .contact-form button:hover {
     background-color: #808080;
+}
+
+
+@media (max-width: 1200px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .consultation, .design-visualization, .implementation {
+        width: 30%;
+    }
+
+    .package {
+        width: 30%;
+    }
+
+    .review {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .introduction img {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .featured-project {
+        width: 100%;
+    }
+
+    .design-tips {
+        width: 100%;
+    }
+
+    .services-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation, .design-visualization, .implementation {
+        width: 70%;
+    }
+
+    .team-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 70%;
+    }
+
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 70%;
+    }
+
+    .gallery-row {
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        width: 45%;
+    }
+
+    .contact-columns {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .reviews-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        top: 35%;
+    }
+
+    .explore-btn {
+        top: 60%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .services-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation, .design-visualization, .implementation {
+        width: 100%;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .package {
+        width: 100%;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 }
