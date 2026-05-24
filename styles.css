@@ -667,8 +667,7 @@ footer span {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: stretch;  
+    gap: 30px;  
 }
 
 .contact-info {
