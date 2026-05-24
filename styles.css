@@ -878,6 +878,29 @@ footer span {
         width: 100%;
     }
 
+    .contact-columns {
+        flex-direction: column;
+    }
+    .contact-left {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    .reviews-box {
+        width: 100%;
+    }
+    .contact-info p {
+        font-size: 14px;
+        word-break: break-word;
+    }
+    .review-text {
+        font-size: 14px;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
