@@ -824,7 +824,7 @@ footer span {
 
     nav {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-end;
         gap: 15px;
     }
 
